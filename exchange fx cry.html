@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exchange Rate & Crypto Calculator</title>
+  <link rel="stylesheet" href="exchange fx and cry css.css">
+</head>
+<body> <img src="image/Logo Maker 2024_08_31_10_11_50RRR TECH.jpg"alt="" class="logo-img" />
+    <img src="image/money.png" alt="" class="money-img" />
+    <h1>Exchange Rate Calculator</h1>
+    
+    <div class="container">
+        <h2>Currency Exchange rate Calculator</h2>
+      <div class="currency">
+        <select id="currency-one">
+          <option value="AED">AED</option>
+          <option value="ARS">ARS</option>
+          <option value="AUD">AUD</option>
+          <option value="BGN">BGN</option>
+          <option value="BRL">BRL</option>
+          <option value="BSD">BSD</option>
+          <option value="CAD">CAD</option>
+          <option value="CHF">CHF</option>
+          <option value="CLP">CLP</option>
+          <option value="CNY">CNY</option>
+          <option value="COP">COP</option>
+          <option value="CZK">CZK</option>
+          <option value="DKK">DKK</option>
+          <option value="DOP">DOP</option>
+          <option value="EGP">EGP</option>
+          <option value="EUR">EUR</option>
+          <option value="FJD">FJD</option>
+          <option value="GBP">GBP</option>
+          <option value="GTQ">GTQ</option>
+          <option value="HKD">HKD</option>
+          <option value="HRK">HRK</option>
+          <option value="HUF">HUF</option>
+          <option value="IDR">IDR</option>
+          <option value="ILS">ILS</option>
+          <option value="INR">INR</option>
+          <option value="ISK">ISK</option>
+          <option value="JPY">JPY</option>
+          <option value="KRW">KRW</option>
+          <option value="KZT">KZT</option>
+          <option value="MXN">MXN</option>
+          <option value="MYR">MYR</option>
+          <option value="NOK">NOK</option>
+          <option value="NZD">NZD</option>
+          <option value="PAB">PAB</option>
+          <option value="PEN">PEN</option>
+          <option value="PHP">PHP</option>
+          <option value="PKR">PKR</option>
+          <option value="PLN">PLN</option>
+          <option value="PYG">PYG</option>
+          <option value="RON">RON</option>
+          <option value="RUB">RUB</option>
+          <option value="SAR">SAR</option>
+          <option value="SEK">SEK</option>
+          <option value="SGD">SGD</option>
+          <option value="THB">THB</option>
+          <option value="TRY">TRY</option>
+          <option value="TWD">TWD</option>
+          <option value="UAH">UAH</option>
+          <option value="USD" selected>USD</option>
+          <option value="UYU">UYU</option>
+          <option value="VND">VND</option>
+          <option value="ZAR">ZAR</option>
+        </select>
+        <input type="number" id="amount-one" placeholder="0" value="1" />
+      </div>
+      <div class="swap-rate-container">
+        <button class="btn" id="swap">Swap</button>
+        <div class="rate" id="rate"></div>
+      </div>
+      <div class="currency">
+        <select id="currency-two">
+          <option value="AED">AED</option>
+          <option value="ARS">ARS</option>
+          <option value="AUD">AUD</option>
+          <option value="BGN">BGN</option>
+          <option value="BRL">BRL</option>
+          <option value="BSD">BSD</option>
+          <option value="CAD">CAD</option>
+          <option value="CHF">CHF</option>
+          <option value="CLP">CLP</option>
+          <option value="CNY">CNY</option>
+          <option value="COP">COP</option>
+          <option value="CZK">CZK</option>
+          <option value="DKK">DKK</option>
+          <option value="DOP">DOP</option>
+          <option value="EGP">EGP</option>
+          <option value="EUR" selected>EUR</option>
+          <option value="FJD">FJD</option>
+          <option value="GBP">GBP</option>
+          <option value="GTQ">GTQ</option>
+          <option value="HKD">HKD</option>
+          <option value="HRK">HRK</option>
+          <option value="HUF">HUF</option>
+          <option value="IDR">IDR</option>
+          <option value="ILS">ILS</option>
+          <option value="INR">INR</option>
+          <option value="ISK">ISK</option>
+          <option value="JPY">JPY</option>
+          <option value="KRW">KRW</option>
+          <option value="KZT">KZT</option>
+          <option value="MXN">MXN</option>
+          <option value="MYR">MYR</option>
+          <option value="NOK">NOK</option>
+          <option value="NZD">NZD</option>
+          <option value="PAB">PAB</option>
+          <option value="PEN">PEN</option>
+          <option value="PHP">PHP</option>
+          <option value="PKR">PKR</option>
+          <option value="PLN">PLN</option>
+          <option value="PYG">PYG</option>
+          <option value="RON">RON</option>
+          <option value="RUB">RUB</option>
+          <option value="SAR">SAR</option>
+          <option value="SEK">SEK</option>
+          <option value="SGD">SGD</option>
+          <option value="THB">THB</option>
+          <option value="TRY">TRY</option>
+          <option value="TWD">TWD</option>
+          <option value="UAH">UAH</option>
+          <option value="USD">USD</option>
+          <option value="UYU">UYU</option>
+          <option value="VND">VND</option>
+          <option value="ZAR">ZAR</option>
+        </select>
+        <input type="number" id="amount-two" placeholder="0" />
+      </div>
+    </div>
+
+<!--  Crypto Calculator Container -->
+<div class="container">
+    <h2>Crypto Exchange rate Calculator</h2>
+    <div class="currency">
+      <select id="crypto-one">
+        <option value="bitcoin" selected>Bitcoin (BTC)</option>
+        <option value="ethereum">Ethereum (ETH)</option>
+        <option value="litecoin">Litecoin (LTC)</option>
+        <option value="ripple">Ripple (XRP)</option>
+        <option value="dogecoin">Dogecoin (DOGE)</option>
+        <option value="solana">Solana (SOL)</option>
+        <option value="cardano">Cardano (ADA)</option>
+        <option value="polygon">Polygon (MATIC)</option>
+        <option value="binancecoin">Binance Coin (BNB)</option>
+        <option value="avalanche">Avalanche (AVAX)</option>
+        <option value="chainlink">Chainlink (LINK)</option>
+        <option value="polkadot">Polkadot (DOT)</option>
+        <option value="uniswap">Uniswap (UNI)</option>
+        <option value="shiba-inu">Shiba Inu (SHIB)</option>
+        <option value="tether">Tether (USDT)</option>
+        <option value="usd-coin">USD Coin (USDC)</option>
+      </select>
+      <input type="number" id="crypto-amount-one" value="1">
+    </div>
+    <div class="currency">
+      <select id="currency-three">
+        <option value="usd" selected>USD</option>
+        <option value="aed">AED</option>
+        <option value="ars">ARS</option>
+        <option value="aud">AUD</option>
+        <option value="bgn">BGN</option>
+        <option value="brl">BRL</option>
+        <option value="bsd">BSD</option>
+        <option value="cad">CAD</option>
+        <option value="chf">CHF</option>
+        <option value="clp">CLP</option>
+        <option value="cny">CNY</option>
+        <option value="cop">COP</option>
+        <option value="czk">CZK</option>
+        <option value="dkk">DKK</option>
+        <option value="dop">DOP</option>
+        <option value="egp">EGP</option>
+        <option value="eur">EUR</option>
+        <option value="fjd">FJD</option>
+        <option value="gbp">GBP</option>
+        <option value="gtq">GTQ</option>
+        <option value="hkd">HKD</option>
+        <option value="hrk">HRK</option>
+        <option value="huf">HUF</option>
+        <option value="idr">IDR</option>
+        <option value="ils">ILS</option>
+        <option value="inr">INR</option>
+        <option value="isk">ISK</option>
+        <option value="jpy">JPY</option>
+        <option value="krw">KRW</option>
+        <option value="kzt">KZT</option>
+        <option value="mxn">MXN</option>
+        <option value="myr">MYR</option>
+        <option value="nok">NOK</option>
+        <option value="nzd">NZD</option>
+        <option value="pab">PAB</option>
+        <option value="pen">PEN</option>
+        <option value="php">PHP</option>
+        <option value="pkr">PKR</option>
+        <option value="pln">PLN</option>
+        <option value="pyg">PYG</option>
+        <option value="ron">RON</option>
+        <option value="rub">RUB</option>
+        <option value="sar">SAR</option>
+        <option value="sek">SEK</option>
+        <option value="sgd">SGD</option>
+        <option value="thb">THB</option>
+        <option value="try">TRY</option>
+        <option value="twd">TWD</option>
+        <option value="uah">UAH</option>
+        <option value="uyu">UYU</option>
+        <option value="vnd">VND</option>
+        <option value="zar">ZAR</option>
+      </select>
+      <input type="number" id="crypto-amount-two" value="1" disabled>
+    </div>
+    <div class="swap-rate-container">
+      
+      <div class="rate" id="crypto-rate"></div>
+    </div>
+  </div>
+
+  <footer>
+    <marquee>@ All rights reserved to Azari Tech Solution</marquee>
+  </footer>
+
+  <script src="exchange fx and cry script.js"></script>
+</body>
+</html>
